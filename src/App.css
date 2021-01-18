@@ -1,0 +1,34 @@
+:root {
+  --theme-color: #fff;
+  --theme-bg-color: #232332;
+}
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding: 100px 0px;
+  background: var(--theme-bg-color);
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  row-gap: 10px;
+  color: var(--theme-color);
+  transition: all 0.5s ease 0s;
+}
+.wrapper.light {
+  --theme-color: #000;
+  --theme-bg-color: #eee;
+}
+.error {
+  color: red;
+  text-transform: uppercase;
+}
+.loading {
+  color: green;
+  text-transform: uppercase;
+}
+.item {
+  list-style: none;
+  text-align: left;
+}
